@@ -1,0 +1,24 @@
+server:
+  port: 8443
+
+spring:
+  application:
+    name: crypto-service-template
+
+crypto:
+  keystore:
+    path: ${CRYPTO_KEYSTORE_PATH:classpath:keystore/dev-keystore.p12}
+    password: ${CRYPTO_KEYSTORE_PASSWORD:}
+    type: PKCS12
+    key-alias: ${CRYPTO_KEY_ALIAS:project-key-v1}
+  algorithm:
+    symmetric: AES/GCM/NoPadding
+    asymmetric: X25519
+  key:
+    version: 1
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
