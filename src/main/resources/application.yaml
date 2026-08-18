@@ -8,7 +8,7 @@ spring:
 crypto:
   keystore:
     path: ${CRYPTO_KEYSTORE_PATH:classpath:keystore/dev-keystore.p12}
-    password: ${CRYPTO_KEYSTORE_PASSWORD:}
+    password: ${CRYPTO_KEYSTORE_PASSWORD:changeit}
     type: PKCS12
     key-alias: ${CRYPTO_KEY_ALIAS:project-key-v1}
   algorithm:
