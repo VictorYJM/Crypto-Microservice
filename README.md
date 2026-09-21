@@ -27,6 +27,4 @@ Stateless envelope encryption microservice. AES-256-GCM for data, X25519 + HKDF 
 - Each client/project must have its own isolated key pair.
 
 ## .env Supabase tests credentials
-SUPABASE_URL=https://ymljugirhmuicphkdpck.supabase.co
-SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InltbGp1Z2lyaG11aWNwaGtkcGNrIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4OTA2NjA3MCwiZXhwIjoyMTA0NjQyMDcwfQ.v_PgSvDE7x2h9XCHYA1ttMIU-u25Uh_N9F9ZaZoOlII
-CRYPTO_SERVICE_URL=http://localhost:8443
+available on https://www.invertexto.com/unicotumigos
