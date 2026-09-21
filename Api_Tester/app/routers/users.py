@@ -67,7 +67,7 @@ async def revelar_usuario(usuario_id: str):
     user = result.data[0]
 
     cpf = await crypto_client.decrypt(_strip_algorithm(user["cpf_encrypted"]))
-    telefone = await crypto_client.decrypt(_strip_algorithm(user["telefone_encrypted"]))
+    telefone = await crypto_client.decrypt(_strip_algorithm(user["phone_encrypted"]))
 
     # AQUI é o ponto certo pra registrar auditoria de acesso (quem revelou, quando)
     # print(f"AUDIT: usuario {usuario_id} revelado em {datetime.now()}")
